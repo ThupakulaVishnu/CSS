@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #imageRepeated {
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+
+
+        }
+
+        #Norepeat {
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+        }
+
+        #xaxisrepeat {
+            background-repeat: repeat-x;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+        }
+
+        #yaxisrepeat {
+            background-repeat: repeat-y;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+        }
+
+        #complete_screen {
+            background-size: cover;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+        }
+
+        #total_screen_contain {
+            background-size: contain;
+            border: 2px solid black;
+            height: 70vh;
+            width: 80vw;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+        }
+
+        #total_screen_auto {
+            background-size: auto;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+        }
+
+        #custom_width_height {
+            background-size: 100% 100%;
+            border: 2px solid black;
+            height: 100vh;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+        }
+
+        #bgimattachment {
+            background-attachment: fixed;
+            border: 2px solid black;
+            height: 160vh;
+            margin: 10px;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: red;
+        }
+
+        #bgimposition {
+            background-position: center center;
+            border: 2px solid black;
+            height: 90vh;
+            width: 95vw;
+            margin: 10px;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #tranceparance_color{
+            background-position: center center;
+            border: 2px solid black;
+            height: 95vh;
+            width: 95vw;
+            margin: 10px;
+            background-color: antiquewhite;
+            background-image: url("https://th.bing.com/th/id/OIP.HdbZdZiqfhA5xD-zuPKnQAHaEo?pid=ImgDet&rs=1");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #inner_trancparanc{
+            height:100%;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <center>Back Ground Image(Repeated images)
+        </h1>
+    </div>
+    <div id="imageRepeated"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Without Repeated images)
+        </h1>
+    </div>
+    <div id="Norepeat"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(X-Axis Repeated)
+        </h1>
+    </div>
+    <div id="xaxisrepeat"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Y-Axis Repeated)
+        </h1>
+    </div>
+    <div id="yaxisrepeat"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Image attached content moves)
+        </h1>
+    </div>
+    <div id="bgimattachment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod quasi vero
+        provident laboriosam? Officiis dolorem iusto ex et ea odit magni deserunt optio nostrum ipsum quis quia debitis
+        quaerat dolore maiores, voluptates, impedit architecto inventore eligendi. Reprehenderit ea ducimus a amet
+        nostrum impedit exercitationem at. Laboriosam accusantium, at optio doloremque incidunt, magnam voluptatum esse,
+        eveniet saepe tempore sequi rem fugit numquam et commodi autem cupiditate eius obcaecati modi vero assumenda!
+        Impedit tempore quas molestiae doloremque quod ad fuga, maiores dolor beatae. Quasi iure voluptates provident in
+        eveniet. Hic, quaerat veritatis praesentium natus atque quo ipsum asperiores commodi ab enim eveniet tenetur
+        nemo sed vitae doloremque dolorum sint laboriosam, soluta unde velit deserunt dolore quod? Laboriosam incidunt
+        soluta eos totam cum, sunt praesentium vel molestiae amet rem, quae voluptatem ipsa magnam suscipit? Magnam,
+        quia architecto nisi tempore officiis mollitia enim est ducimus aperiam ipsa corporis aspernatur voluptas cumque
+        inventore neque hic magni id impedit perspiciatis consectetur expedita explicabo beatae! Odio laboriosam nam
+        natus quas nostrum repellendus consequuntur animi atque magni commodi, laborum, debitis culpa asperiores rerum
+        nesciunt hic non! Quasi tenetur non adipisci deleniti? Repellendus natus ipsa eos in nobis quo sint vitae nihil
+        dolores, maxime odio accusamus distinctio eius.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Recusandae quod quasi vero
+        provident laboriosam? Officiis dolorem iusto ex et ea odit magni deserunt optio nostrum ipsum quis quia debitis
+        quaerat dolore maiores, voluptates, impedit architecto inventore eligendi. Reprehenderit ea ducimus a amet
+        nostrum impedit exercitationem at. Laboriosam accusantium, at optio doloremque incidunt, magnam voluptatum esse,
+        eveniet saepe tempore sequi rem fugit numquam et commodi autem cupiditate eius obcaecati modi vero assumenda!
+        Impedit tempore quas molestiae doloremque quod ad fuga, maiores dolor beatae. Quasi iure voluptates provident in
+        eveniet. Hic, quaerat veritatis praesentium natus atque quo ipsum asperiores commodi ab enim eveniet tenetur
+        nemo sed vitae doloremque dolorum sint laboriosam, soluta unde velit deserunt dolore quod? Laboriosam incidunt
+        soluta eos totam cum, sunt praesentium vel molestiae amet rem, quae voluptatem ipsa magnam suscipit? Magnam,
+        quia architecto nisi tempore officiis mollitia enim est ducimus aperiam ipsa corporis aspernatur voluptas cumque
+        inventore neque hic magni id impedit perspiciatis consectetur expedita explicabo beatae! Odio laboriosam nam
+        natus quas nostrum repellendus consequuntur animi atque magni commodi, laborum, debitis culpa asperiores rerum
+        nesciunt hic non! Quasi tenetur non adipisci deleniti? Repellendus natus ipsa eos in nobis quo sint vitae nihil
+        dolores, maxime odio accusamus distinctio eius.
+
+    </div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Complete Screen with cover)
+        </h1>
+    </div>
+    <div id="complete_screen"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Complete Screen with contain)
+        </h1>
+    </div>
+    <div id="total_screen_contain"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Complete Screen with auto)
+        </h1>
+    </div>
+    <div id="total_screen_auto"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Custom width and height)
+        </h1>
+    </div>
+    <div id="custom_width_height"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(background image position)
+        </h1>
+    </div>
+    <div id="bgimposition"></div>
+    <div>
+        <h1>
+            <center>Back Ground Image(Applying transparance color on image)
+        </h1>
+    </div>
+    <div id="tranceparance_color">
+        <div id="inner_trancparanc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam assumenda quis iure officia, iste
+            sunt perferendis laboriosam alias exercitationem fugit veniam, sequi consequuntur nulla commodi eveniet qui
+            quibusdam? Sequi, architecto culpa saepe beatae, doloremque delectus earum ex voluptatibus aliquam nihil
+            porro ratione, quibusdam eum facilis sit veritatis dolorum. Quod pariatur rem in maxime debitis nemo minus
+            iure ad, veniam id illo quis, culpa explicabo dolore eaque neque, ipsum sit labore fugit soluta? Maiores
+            ipsam velit adipisci? Natus culpa nisi deserunt iure odio animi illo, ab placeat exercitationem, a unde
+            magni sit repellendus explicabo laudantium incidunt modi quasi minus similique quos. Facere, enim sequi. Aut
+            velit voluptatibus, minus ducimus praesentium, perferendis inventore repudiandae delectus iste eaque
+            necessitatibus corporis. Temporibus non eaque doloremque, voluptates facilis labore minima magni doloribus
+            at error eius quos placeat possimus! Aliquam pariatur libero perspiciatis facere quibusdam. Minima
+            blanditiis eveniet nam assumenda suscipit molestiae inventore! Reiciendis laudantium veritatis doloremque,
+            inventore expedita animi quisquam dolores sunt, sed distinctio consequuntur! Laborum quam unde minus fugit,
+            officiis commodi libero labore, architecto delectus molestias velit ut natus? Repellat beatae debitis ipsam
+            culpa quos, nisi itaque eius sit iure molestias optio unde repellendus omnis voluptas. Quam perspiciatis
+            corrupti debitis quae distinctio accusamus fugit repudiandae temporibus, illum expedita ratione sunt
+            consequuntur ea, iure enim veniam! Veritatis nostrum voluptates vitae optio non, velit possimus eaque in
+            quam fugiat unde doloremque quo repellat eos fuga perspiciatis quis cumque facere quae? Fugit, debitis
+            totam, pariatur obcaecati, officia alias mollitia eaque ipsum velit a dignissimos provident tenetur.
+        </div>
+    </div>
+</body>
+
+</html>
