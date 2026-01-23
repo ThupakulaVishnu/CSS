@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #container {
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px;
+            gap:50px;
+        }
+        #box1{
+            background-color: yellowgreen;
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+        #box2{
+            background-color: yellow;
+            grid-column-start:3;
+            grid-column-end:5;
+        }
+        #box3{
+            background-color: violet;
+            grid-column-start:3;
+            grid-column-end:5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+</body>
+
+</html>

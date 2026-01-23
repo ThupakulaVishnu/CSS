@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #gridcontainercolumns{
+            width:800px;
+            height:500px;
+            display:grid;
+            margin:30px auto;
+            border:2px solid black;
+            grid-template-columns: 100px 200px 200px 300px;
+        }
+        #gridcontainerrows{
+            width:800px;
+            height:500px;
+            display:grid;
+            margin:30px auto;
+            border:2px solid black;
+            grid-template-rows:100px 200px 100px 100px;
+        }
+        #Box1{
+            background-color: lightblue;
+        }
+        #Box2{
+            background-color: lightcoral;
+        }
+        #Box3{
+            background-color: rgb(19, 108, 86);
+        }
+        #Box4{
+            background-color: rgb(130, 23, 92);
+        }
+    </style>
+</head>
+<body>
+    <div id="gridcontainercolumns">
+        <div id="Box1">col1</div>
+        <div id="Box2">col2</div>
+        <div id="Box3">col3</div>
+        <div id="Box4">col3</div>
+    </div>
+        <div id="gridcontainerrows">
+        <div id="Box1">row1</div>
+        <div id="Box2">row2</div>
+        <div id="Box3">row3</div>
+        <div id="Box4">row4</div>
+    </div>
+</body>
+</html>
