@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes basicanimation{
+            0%{
+                background-color: black;
+                color:white;
+            }
+            25%{
+                background-color: blue;
+                color:black;
+            }
+            50%{
+                background-color: brown;
+                color:white;
+            }
+            75%{
+                background-color: lightgreen;
+                color:black;
+            }
+            100%{
+                background-color: lightcoral;
+                color:white;
+            }
+        }
+
+        div{
+            width: 500px;
+            height:100px;
+            border: 3px solid green;
+            margin: 100px auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+
+            animation-name:basicanimation;
+            animation-duration:3s ;
+            animation-delay: 1s;
+            animation-iteration-count: 2;
+        }
+    </style>
+</head>
+<body>
+    <div>Animation</div>
+</body>
+</html>
